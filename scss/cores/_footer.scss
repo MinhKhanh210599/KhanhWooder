@@ -1,0 +1,36 @@
+footer {
+  max-width: $container-max-width;
+  height: 55px;
+  background-color: #050505;
+  display: flex;
+  .container {
+    max-width: $container-width;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    p,
+    a {
+      font-size: 12px;
+      color: #b0b0b0;
+      letter-spacing: 0.5px;
+      font-family: "pr";
+    }
+    img {
+      width: 145px;
+      height: 17px;
+    }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@include sm {
+  footer {
+    .container {
+      padding: 0 30px;
+    }
+  }
+}
